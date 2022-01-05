@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Sagar
+Build-Jdk: 15.0.1
+Implementation-Title: Mini_Project
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.cvr
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/Mini_Project
+Created-By: Maven Integration for Eclipse
+

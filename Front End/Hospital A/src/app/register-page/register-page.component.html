@@ -1,0 +1,72 @@
+ <div style="background-image: url('../assets/brg2.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;">
+    <br>
+    <h2 class="my-4" style="text-align: center; color: white;">Registration Page</h2>
+    <form style="margin: 0 auto; width:50%" class="my-4">
+        <div class="container" style="color: white;">
+        <div class="form-group col-md">
+            <label>Username:</label>
+            <input type="text" class="form-control" [(ngModel)]="username" name="username" required>
+        </div>
+        <div class="form-group col-md">
+            <label>Password:</label>
+            <input type="text" class="form-control" [(ngModel)]="password" name="password" required>
+        </div>
+        <div class="form-group col-md">
+            <label>Confirm Password:</label>
+            <input type="text" class="form-control" [(ngModel)]="cpassword" name="cpassword" required>
+        </div>
+        <div class="form-group col-md">
+            <label>Aadhar Number:</label>
+            <input type="text" class="form-control" [(ngModel)]="proofID" name="proofID" required>
+        </div>
+        <div class="form-group col-md">
+            <label>Patient name:</label>
+            <input type="text" class="form-control" [(ngModel)]="name" name="name" required>
+        </div>
+        <div class="form-group col-md">
+            <label>Age:</label>
+            <input type="text" class="form-control" [(ngModel)]="age" name="age" required>
+        </div>
+        <div class="form-group col-md">
+            <label>Phone Number:</label>
+            <input type="text" class="form-control" [(ngModel)]="phoneNo" name="phoneNo" required>
+        </div>
+        <div class="form-group col-md">
+            <label>DOB:</label>
+            <input type="date" class="form-control" [(ngModel)]="dob" name="dob" required>
+        </div>
+        </div>
+        <div class="col-md-12 text-center">
+        <button class="btn btn-success btn-lg" style="align:center;" (click)="onSubmit()">Submit</button>
+        </div>
+    </form>
+    <br>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+<!--<form >
+    <label>Username:</label>
+    <input type="text" [(ngModel)]="username" name="username" required/><br>
+    <label>Password:</label>
+    <input type="text" [(ngModel)]="password" name = "password" required/><br>
+    <label>Confirm Password:</label>
+    <input type="text" [(ngModel)]="cpassword" name = "cpassword" required/><br>
+    <label>Aadhar Number:</label>
+    <input type="text" [(ngModel)]="proofID" name ="proofID" required/><br>
+    <label>Patient Name:</label>
+    <input type="text" [(ngModel)]="name" name = "name"required/><br>
+    <label>Age:</label>
+    <input type="text" [(ngModel)]="age" name ="age" required/><br>
+    <label>Phone NUmber:</label>
+    <input type="text" [(ngModel)]="phoneNo" name ="phoneNo" required/><br>
+    <label>DOB:</label>
+    <input type="date" [(ngModel)]="dob" name="dob" required/><br>
+    <button (click)="onSubmit()">Submit</button>
+</form>-->
+</div>

@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="">SWES</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/patientDashboard">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/patient/treatmentRequest">Treatment Request</a>
+                </li>
+            </ul>
+            <a class="nav-link" routerLink="/patientlogin"><button class="btn btn-success my-2 my-sm-0" type="submit">Logout</button></a>
+        </div>
+    </nav>
+    <h2 class="my-4" style="text-align: center;"> Treatment Details</h2>
+    <form style="margin: 0 auto; width:50%" class="my-4">
+        <div class="container">
+        <div class="form-group col-md">
+            <label>Problem:</label>
+            <input type="text" class="form-control" [(ngModel)]="problem" name="problem">
+        </div>
+        <div class="form-group col-md">
+            <label>Description:</label>
+            <input type="text" class="form-control" [(ngModel)]="desp" name="desp">
+        </div>
+        <div class="form-group col-md">
+            <label>Specialist Required:</label>
+            <select class="form-control" [(ngModel)]="specialist" name="specialist" (change)="load()">
+                <option value = "duty doctor">Duty Doctor</option>
+                <option value = "surgeon">surgeon</option>
+                <option value = "head doctor">Head Doctor</option>
+            </select>
+        </div>
+        <div class="form-group col-md">
+            <label>Doctor name:</label>
+            <select class="form-control" [(ngModel)]="dusername" name="dusername">
+                    <option *ngFor = "let d of dnames" value = "{{d}}">{{d}}</option>
+            </select>
+        </div>
+        </div>
+        <div class="col-md-12 text-center">
+        <button class="btn btn-success btn-lg" style="align:center;" (click)="onSubmit()">Submit</button>
+        </div>
+    </form>
+    <br>
+    <div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+<!--<p>Request Treatment!</p>
+<form>
+    <label>Problem:</label>
+    <input type="text" name="problem" [(ngModel)]="problem"/>
+    <label>Description:</label>
+    <input type="text" name="desp" [(ngModel)]="desp"/>
+    <label>Specialist Required:</label>
+    <select name="specialist" [(ngModel)]="specialist">
+        <option>Duty Doctor</option>
+        <option>surgeon</option>
+        <option>Head Doctor</option>
+    </select>
+    <label>Doctor name</label>
+    <select name="dUsername" [(ngModel)]="dusername">
+    <div *ngIf="specialist">
+    <option *ngFor = "let d of dnames">{{d}}</option>
+    </div>
+    </select>
+    <button (click)="onSubmit()">Submit</button>
+</form>-->

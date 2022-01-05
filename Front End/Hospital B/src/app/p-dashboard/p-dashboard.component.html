@@ -1,0 +1,51 @@
+<!--<p>p-dashboard works!</p>
+
+<p>Home</p>--><!--Details-->
+<!--<p>Treatment Request</p>
+<p>Logout</p>-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="">HOPE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/patientDashboard">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/patient/treatmentRequest">Treatment Request  <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <a class="nav-link" routerLink="/patientlogin"><button class="btn btn-success my-2 my-sm-0" type="submit">Logout</button></a>
+        </div>
+    </nav>
+    <h2 class="my-4" style="text-align: center;">Dashboard</h2>
+    <div class="container my-4" style="border: 2px solid black;">
+    <p>Username : {{username}}</p>
+    <p>Proof_ID : {{proofID}}</p>
+    <p>Name : {{name}}</p>
+    <p>Age : {{age}}</p>
+    <p>Phone No : {{phoneNo}}</p>
+    <p>DOB : {{dob}}</p>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<!--<p>Username:</p>
+<p>{{username}}</p>
+<p>Proof_ID:</p>
+<p>{{proofID}}</p>
+<p>Name:</p>
+<p>{{name}}</p>
+<p>Age:</p>
+<p>{{age}}</p>
+<p>Phone No:</p>
+<p>{{phoneNo}}</p>
+<p>DOB:</p>
+<p>{{dob}}</p>-->
